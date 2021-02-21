@@ -3,12 +3,14 @@ package com.example.ulangan_aulia;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.Calendar;
@@ -43,14 +45,14 @@ AddNote extends AppCompatActivity {
         ButterKnife.bind(this);
 
 
-        Button save = (Button) findViewById(R.id.tombolSave);
+        ImageView save = (ImageView) findViewById(R.id.tombolSave);
         save.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 saveNote();
             }
         });
 
-        Button hapus = (Button) findViewById(R.id.tombolHapus);
+        ImageView hapus = (ImageView) findViewById(R.id.tombolHapus);
 
 
         //ambil data

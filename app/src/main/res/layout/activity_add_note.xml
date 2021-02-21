@@ -63,22 +63,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNote" />
 
-    <Button
+    <ImageView
         android:id="@+id/tombolSave"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:text="Save"
+        android:layout_width="303dp"
+        android:layout_height="89dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/save"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etIsi" />
 
-    <Button
+
+    <ImageView
         android:id="@+id/tombolHapus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="303dp"
+        android:layout_height="89dp"
+        android:src="@drawable/del"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Hapus"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tombolSave"/>
+        app:layout_constraintTop_toBottomOf="@+id/tombolSave" />
 </androidx.constraintlayout.widget.ConstraintLayout>
